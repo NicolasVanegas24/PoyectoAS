@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="end|top">
+
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Nombre de la Empresa -->
+        <TextView
+            android:id="@+id/companyNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="DBR Company"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333" />
+
+        <!-- Mensaje de Bienvenida -->
+        <TextView
+            android:id="@+id/welcomeMessageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Conectamos a las personas con el mundo y resolvemos tus problemas técnicos al instante."
+            android:textSize="16sp"
+            android:textColor="#666"
+            android:gravity="center" />
+
+        <!-- Contenedor de las Tarjetas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="336dp"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:weightSum="2">
+
+            <!-- Tarjeta de Servicios -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:contentDescription="Imagen de servicios de Internet"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/iservicio" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:text="Servicios"
+                        android:textColor="#333"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Ingresa aquí para ver los planes de internet y escoge el que mejor se adapte a ti"
+                        android:textColor="#666"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/internetServicesButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="16dp"
+                        android:backgroundTint="#6200EE"
+                        android:text="Elegir"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tarjeta de Soporte Técnico -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:contentDescription="Imagen de soporte técnico"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/isoporte" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:text="Soporte"
+                        android:textColor="#333"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Si estás teniendo algún problema con tu conexión podemos ayudarte"
+                        android:textColor="#666"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/techSupportButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="16dp"
+                        android:backgroundTint="#6200EE"
+                        android:text="Elegir"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/offersSectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:text="Anuncios y Ofertas"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Lista de Anuncios -->
+        <LinearLayout
+            android:id="@+id/offersContainer"
+            android:layout_width="match_parent"
+            android:layout_height="211dp"
+            android:layout_marginTop="16dp"
+            android:background="#ffffff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Oferta 1-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#eeeeee"
+                android:elevation="2dp"
+                android:padding="10dp"
+                android:text="Plan de Internet de Alta Velocidad - 30% de Descuento por Tiempo Limitado"
+                android:textSize="16sp" />
+
+            <!-- Oferta 2 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#eeeeee"
+                android:elevation="2dp"
+                android:padding="10dp"
+                android:text="¡Contrata nuestro servicio y recibe un mes gratis!"
+                android:textSize="16sp" />
+
+            <!-- Ofert 3 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#eeeeee"
+                android:elevation="2dp"
+                android:padding="10dp"
+                android:text="Actualiza a nuestro plan premium y ahorra un 20%"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Pie de página-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Información de contacto -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Información de Teléfono -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tel: +123456789"
+                    android:textSize="14sp"
+                    android:textColor="#333" />
+
+                <!-- Información de Correo Electrónico -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email: DBR@internet.com"
+                    android:textSize="14sp"
+                    android:textColor="#333" />
+            </LinearLayout>
+
+            <!-- Botón de Cerrar Sesión -->
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cerrar Sesión"
+                android:textSize="16sp"
+                android:backgroundTint="#6200EE"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+

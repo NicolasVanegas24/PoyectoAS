@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "895886184561",
+    "project_id": "proyectoas-dc919",
+    "storage_bucket": "proyectoas-dc919.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895886184561:android:d548f331660344549f8bd0",
+        "android_client_info": {
+          "package_name": "com.example.proyectoas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJXCKxFabydfaFpnETh2nVw3qXbEAb1AM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
